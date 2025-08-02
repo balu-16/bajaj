@@ -91,7 +91,7 @@
   "variable": [
     {
       "key": "base_url",
-      "value": "http://localhost:8000"
+      "value": "https://bajaj-9p8i.onrender.com"
     }
   ]
 }

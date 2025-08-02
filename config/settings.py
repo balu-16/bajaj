@@ -32,7 +32,7 @@ class Settings(BaseSettings):
     SSL_CERTFILE: str = os.getenv("SSL_CERTFILE", "localhost.crt")
     
     # Deployment
-    BASE_URL: str = os.getenv("BASE_URL", "http://localhost:8000")
+    BASE_URL: str = os.getenv("BASE_URL", "https://bajaj-9p8i.onrender.com")
     
     # Timezone Configuration
     TIMEZONE: str = os.getenv("TIMEZONE", "Asia/Kolkata")  # Indian Standard Time

@@ -72,7 +72,7 @@ Authorization: Bearer 429e00477ed493b1d84caf6b7580ae7d34326355abce267d8395e9cb12
 ## Testing with cURL
 
 ```bash
-curl -X POST "http://localhost:8000/api/v1/hackrx/run" \
+curl -X POST "https://bajaj-9p8i.onrender.com/api/v1/hackrx/run" \
   -H "Content-Type: application/json" \
   -H "Accept: application/json" \
   -H "Authorization: Bearer 429e00477ed493b1d84caf6b7580ae7d34326355abce267d8395e9cb12a748bc" \

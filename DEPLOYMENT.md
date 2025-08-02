@@ -118,8 +118,8 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --ssl-keyfile localhost.key --ssl-ce
 ```
 
 ### Access Your Application
-- HTTPS: https://localhost:8000
-- HTTP (if no SSL certs): http://localhost:8000
+- Production: https://bajaj-9p8i.onrender.com
+- Local Development: http://localhost:8000
 
 ### Browser Security Warning
 Since you're using a self-signed certificate, your browser will show a security warning. This is normal for development. Click "Advanced" and "Proceed to localhost" to continue.

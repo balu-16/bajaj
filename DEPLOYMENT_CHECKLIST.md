@@ -22,7 +22,7 @@ GEMINI_MODEL=gemini-1.5-flash
 BEARER_TOKEN=your_bearer_token
 DEBUG=false
 ENVIRONMENT=production
-BASE_URL=https://your-app-name.onrender.com
+BASE_URL=https://bajaj-9p8i.onrender.com
 ```
 
 ### GitHub Push Commands
@@ -51,8 +51,8 @@ git push origin main
 
 ### Post-Deployment Verification
 - [ ] Check build logs for errors
-- [ ] Test health endpoint: `https://your-app.onrender.com/health`
-- [ ] Test API endpoint: `https://your-app.onrender.com/api/v1/hackrx/run`
+- [ ] Test health endpoint: `https://bajaj-9p8i.onrender.com/health`
+- [ ] Test API endpoint: `https://bajaj-9p8i.onrender.com/api/v1/hackrx/run`
 - [ ] Verify all services initialized (Pinecone, Gemini)
 
 ### Common Issues & Solutions
