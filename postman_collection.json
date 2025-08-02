@@ -1,0 +1,97 @@
+{
+  "info": {
+    "name": "LLM Query Retrieval System",
+    "description": "API collection for testing the LLM-powered intelligent query-retrieval system",
+    "version": "1.0.0"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/health",
+          "host": ["{{base_url}}"],
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "Service Test",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/v1/hackrx/test",
+          "host": ["{{base_url}}"],
+          "path": ["api", "v1", "hackrx", "test"]
+        }
+      }
+    },
+    {
+      "name": "Process Document Queries",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer 429e00477ed493b1d84caf6b7580ae7d34326355abce267d8395e9cb12a748bc"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"documents\": \"https://sample-link.com/policy.pdf\",\n  \"questions\": [\n    \"What is the waiting period for cataract surgery?\",\n    \"Does this policy cover maternity expenses?\"\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/hackrx/run",
+          "host": ["{{base_url}}"],
+          "path": ["api", "v1", "hackrx", "run"]
+        }
+      }
+    },
+    {
+      "name": "Test with Sample Insurance PDF",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer 429e00477ed493b1d84caf6b7580ae7d34326355abce267d8395e9cb12a748bc"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"documents\": \"https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf\",\n  \"questions\": [\n    \"What is this document about?\",\n    \"What are the main topics covered?\",\n    \"Are there any specific terms or conditions mentioned?\"\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/v1/hackrx/run",
+          "host": ["{{base_url}}"],
+          "path": ["api", "v1", "hackrx", "run"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    }
+  ]
+}
