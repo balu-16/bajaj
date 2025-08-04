@@ -193,6 +193,14 @@ Thumbs.db
 # Render deployment
 .render/
 
+# AWS deployment
+.aws/
+*.zip
+aws-exports.js
+
+# App Runner deployment logs (local)
+.apprunner/
+
 # Local development scripts
 start_http.py
 start_http.bat
