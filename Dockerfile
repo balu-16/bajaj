@@ -33,7 +33,7 @@ COPY . .
 
 # Create non-root user for security
 RUN useradd --create-home --shell /bin/bash --uid 1000 appuser && \
-    chown -R appuser:appuser /opt/app
+    chown -R appuser:appuser /app
 USER appuser
 
 # Expose port (App Runner will handle this automatically)

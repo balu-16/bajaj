@@ -4,16 +4,18 @@
 
 ### Option 1: AWS App Runner (Recommended)
 
-**Pros:** Easiest to set up, similar to Render, automatic scaling
+**Pros:** Easiest to set up, similar to Render, automatic scaling, automatic HTTPS
 **Cons:** Less control, newer service
 
 **Steps:**
 1. Go to AWS App Runner console
 2. Create service from source code
 3. Connect your GitHub repository
-4. Select `apprunner.yaml` configuration
+4. App Runner will automatically detect and use your `Dockerfile`
 5. Set environment variables (see below)
 6. Deploy!
+
+**Note:** App Runner will use your `Dockerfile` for deployment configuration. The service automatically handles SSL certificates, load balancing, and auto-scaling.
 
 ### Option 2: AWS Elastic Beanstalk
 
