@@ -1,5 +1,5 @@
-# Use Python 3.10 slim image for AWS App Runner
-FROM python:3.10-slim
+# Use Python 3.11 slim image for AWS App Runner
+FROM python:3.11-slim
 
 # Set working directory (App Runner expects /app by default)
 WORKDIR /app

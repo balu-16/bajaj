@@ -79,7 +79,7 @@ BEARER_TOKEN=your_bearer_token
 HOST=0.0.0.0
 PORT=8000
 DEBUG=false
-BASE_URL=https://your-aws-domain.com
+BASE_URL=https://xivn9ims7c.ap-south-1.awsapprunner.com
 TIMEZONE=Asia/Kolkata
 ```
 
