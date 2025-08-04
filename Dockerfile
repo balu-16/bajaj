@@ -1,13 +1,13 @@
-# Use Python 3.10 slim image for App Runner
+# Use Python 3.10 slim image for AWS App Runner
 FROM python:3.10-slim
 
-# Set working directory
-WORKDIR /opt/app
+# Set working directory (App Runner expects /app by default)
+WORKDIR /app
 
 # Set environment variables for production
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH=/opt/app
+ENV PYTHONPATH=/app
 ENV HOST=0.0.0.0
 ENV PORT=8000
 ENV DEBUG=false
