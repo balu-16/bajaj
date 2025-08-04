@@ -7,6 +7,9 @@
 **Pros:** Easiest to set up, similar to Render, automatic scaling, automatic HTTPS
 **Cons:** Less control, newer service
 
+You have **two deployment methods** available:
+
+#### Method A: Using Dockerfile (More Control)
 **Steps:**
 1. Go to AWS App Runner console
 2. Create service from source code
@@ -15,7 +18,17 @@
 5. Set environment variables (see below)
 6. Deploy!
 
-**Note:** App Runner will use your `Dockerfile` for deployment configuration. The service automatically handles SSL certificates, load balancing, and auto-scaling.
+#### Method B: Using apprunner.yaml (Simpler)
+**Steps:**
+1. **Remove or rename** your `Dockerfile` (App Runner prioritizes Dockerfile over apprunner.yaml)
+2. Go to AWS App Runner console
+3. Create service from source code
+4. Connect your GitHub repository
+5. Select "Use configuration file" and choose `apprunner.yaml`
+6. Set environment variables (see below)
+7. Deploy!
+
+**Note:** If both files exist, App Runner will use the `Dockerfile` and ignore `apprunner.yaml`. Choose one method based on your preference.
 
 ### Option 2: AWS Elastic Beanstalk
 
