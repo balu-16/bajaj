@@ -210,3 +210,9 @@ generate_ssl_python.py
 # Local SSL certificates
 localhost.key
 localhost.crt
+
+# App Runner deployment logs (local)
+.apprunner/
+
+# Use apprunner.yaml instead of Dockerfile for AWS App Runner
+Dockerfile
