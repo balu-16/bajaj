@@ -20,10 +20,10 @@ pinecone==5.0.1
 google-generativeai==0.3.2
 sentence-transformers==2.2.2
 huggingface_hub==0.16.4
-transformers==4.21.3
+transformers==4.35.0
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.5.1
-numpy==1.24.3
+torch==2.1.0+cpu
+numpy==1.25.2
 
 # Database (Supabase)
 supabase==2.3.4
