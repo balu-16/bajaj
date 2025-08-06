@@ -198,8 +198,6 @@ Thumbs.db
 *.zip
 aws-exports.js
 
-apprunner.yaml/
-
 # Local development scripts
 start_http.py
 start_http.bat
