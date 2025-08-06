@@ -214,5 +214,4 @@ localhost.crt
 # App Runner deployment logs (local)
 .apprunner/
 
-# Use apprunner.yaml instead of Dockerfile for AWS App Runner
-Dockerfile
+# Use apprunner.yaml for AWS App Runner deployment
