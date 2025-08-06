@@ -198,11 +198,7 @@ Thumbs.db
 *.zip
 aws-exports.js
 
-# App Runner deployment logs (local)
-.apprunner/
-
-# App Runner configuration (use Dockerfile instead)
-apprunner.yaml
+apprunner.yaml/
 
 # Local development scripts
 start_http.py
